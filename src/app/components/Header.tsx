@@ -39,22 +39,22 @@ const Header = () => {
 
           {/* Center: Navbar Links */}
           <nav className="hidden lg:flex space-x-4 sm:space-x-6 text-sm">
-            <Link href="/" className="hover:text-gray-500">
+            <Link href="/Products" className="hover:text-gray-500">
               New & Featured
             </Link>
-            <Link href="/allproducts" className="hover:text-gray-500">
+            <Link href="#" className="hover:text-gray-500">
               Men
             </Link>
-            <Link href="/allproducts" className="hover:text-gray-500">
+            <Link href="/" className="hover:text-gray-500">
               Women
             </Link>
-            <Link href="/allproducts" className="hover:text-gray-500">
+            <Link href="#" className="hover:text-gray-500">
               Kids
             </Link>
-            <Link href="/sales" className="hover:text-gray-500">
+            <Link href="#" className="hover:text-gray-500">
               Sale
             </Link>
-            <Link href="/allproducts" className="hover:text-gray-500">
+            <Link href="#" className="hover:text-gray-500">
               SNKRS
             </Link>
           </nav>
@@ -79,9 +79,9 @@ const Header = () => {
             <button>
               <img src="/heart.png" alt="wishlist" className="h-5 w-5" />
             </button>
-            <button>
-              <img src="/cart.png" alt="shoppingcart" className="h-5 w-5" />
-            </button>
+            <Link href="/Bag">
+  <img src="/cart.png" alt="shoppingcart" className="h-5 w-5 cursor-pointer" />
+</Link>
           </div>
         </div>
       </div>
@@ -91,16 +91,16 @@ const Header = () => {
         <Link href="/" className="hover:text-gray-500">
           Home
         </Link>
-        <Link href="/allproducts" className="hover:text-gray-500">
+        <Link href="/" className="hover:text-gray-500">
           Men
         </Link>
-        <Link href="/allproducts" className="hover:text-gray-500">
+        <Link href="/" className="hover:text-gray-500">
           Women
         </Link>
         <Link href="/sales" className="hover:text-gray-500">
           Sale
         </Link>
-        <Link href="/allproducts" className="hover:text-gray-500">
+        <Link href="/" className="hover:text-gray-500">
           SNKRS
         </Link>
       </div>

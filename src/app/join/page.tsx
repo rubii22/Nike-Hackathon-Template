@@ -21,7 +21,7 @@ const Join = () => {
           Create your Nike Member profile and get first access to the very best
           of Nike products, inspiration, and community.
         </p>
-
+ 
         <form className="space-y-4">
           {/* Email Address */}
           <input
@@ -53,7 +53,7 @@ const Join = () => {
 
           {/* Date of Birth */}
           <input
-            type="date"
+            type="Date"
             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-black"
           />
           <p className="text-sm text-gray-500">Get a Nike Member Reward every year on your Birthday.</p>
