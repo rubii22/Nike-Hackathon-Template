@@ -1,10 +1,8 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import { useCart } from "@/app/Context/CartContext";
 import { productData } from "@/app/productdata/data";
 import Image from "next/image";
-import buy from "../../../../Assets/buy.png";
 import { useRouter } from 'next/navigation';
 
 export default function ProductDetail({ params }: { params: { id: string } }) {

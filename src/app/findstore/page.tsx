@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Image from "next/image";
 
 const FindStore = () => {
   return (
@@ -16,17 +16,18 @@ const FindStore = () => {
             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-black text-sm"
           />
           {/* Search Icon */}
-          <img
+          <Image
             src="/searchicon.png"
             alt="Search Icon"
-            className="absolute top-1/2 right-4 transform -translate-y-1/2 w-5 h-5"
+            width={20}
+            height={20}
+            className="absolute top-1/2 right-4 transform -translate-y-1/2"
           />
         </div>
 
         {/* Store List */}
         <p className="text-sm mb-4 text-gray-600">15 Stores Near You</p>
         <ul className="space-y-4">
-          
           {/* Store 1 */}
           <li className="pb-4">
             <div className="flex flex-col">
@@ -62,19 +63,18 @@ const FindStore = () => {
         </ul>
 
         {/* View All Stores */}
-        <p
-          
-          className="text-sm font-bold underline text-black mt-6 block hover:text-gray-700"
-        >
+        <p className="text-sm font-bold underline text-black mt-6 block hover:text-gray-700">
           View All Stores
         </p>
       </div>
 
       {/* Right Section: Map */}
       <div className="w-full lg:w-2/3">
-        <img
-          src="/map.png" 
+        <Image
+          src="/map.png"
           alt="Map"
+          width={1200}
+          height={800}
           className="w-full h-full object-cover"
         />
       </div>

@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import Home from "./components/Home"; 
 import BestOfAirMax from "./components/BestOfAirMax";
 import FeaturedSection from "./components/FeaturedSection";

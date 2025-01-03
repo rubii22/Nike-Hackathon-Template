@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const SignIn = () => {
   return (
@@ -6,7 +7,13 @@ const SignIn = () => {
       {/* Header Section */}
       <div className="flex flex-col items-center mb-10">
         {/* Nike Logo */}
-        <img src="/logo.png" alt="Nike Logo" className="w-16 h-16 mb-4" />
+        <Image
+          src="/logo.png"
+          alt="Nike Logo"
+          width={64}
+          height={64}
+          className="mb-4"
+        />
 
         {/* Title */}
         <h1 className="text-xl font-bold text-center">
@@ -51,7 +58,7 @@ const SignIn = () => {
 
             {/* Terms and Conditions */}
             <p className="text-xs text-gray-600 text-center">
-              By logging in, you agree to Nike's Privacy Policy and Terms of Use.
+              By logging in, you agree to Nike&apos;s Privacy Policy and Terms of Use.
             </p>
 
             {/* Sign-In Button */}

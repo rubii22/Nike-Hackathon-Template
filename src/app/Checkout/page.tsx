@@ -12,7 +12,7 @@ export default function Checkout() {
     return total + (price * item.quantity);
   }, 0);
 
-  const handleSubmit = (e:React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsConfirmed(true);
     clearCart();
@@ -22,9 +22,9 @@ export default function Checkout() {
     return (
       <div className="flex items-center justify-center min-h-[50vh] mt-6">
         <div className="text-center">
-            <div className='flex flex-col justify-center items-center mb-4'>
-            <Image src="/order.png" alt='check' className='w-[40px] h-[40px]'/>
-            </div>
+          <div className="flex flex-col justify-center items-center mb-4">
+            <Image src="/order.png" alt="check" className="w-[40px] h-[40px]" />
+          </div>
           <h1 className="text-2xl font-bold mb-4">Your order is confirmed!</h1>
           <p className="text-gray-600">Thank you for shopping with us.</p>
         </div>
@@ -42,7 +42,7 @@ export default function Checkout() {
                 How would you like to get your order?
               </h1>
               <p className="font-light text-[14px]">
-                Customs regulation for India require a copy of the recipient's
+                Customs regulation for India require a copy of the recipient&apos;s
                 KYC. The address on the KYC needs to match the shipping address.
                 Our courier will contact you via SMS/email to obtain a copy of
                 your KYC. The KYC will be stored securely and used solely for the
@@ -55,7 +55,7 @@ export default function Checkout() {
 
             <div className="flex flex-col justify-center items-center mt-4">
               <div className="flex gap-4 w-[250px] h-[50px] border border-black rounded-md justify-start items-center p-4">
-                <Image src="/deliver.png" alt="deliver" width="16" height="16" />
+                <Image src="/deliver.png" alt="deliver" width={16} height={16} />
                 <p className="font-medium text-[12px]">Deliver It</p>
               </div>
             </div>
@@ -92,13 +92,11 @@ export default function Checkout() {
                 type="text"
                 className="w-full h-[50px] border border-gray-400 rounded-md p-2 text-[14px]"
                 placeholder="Address Line 2"
-                
               />
               <input
                 type="text"
                 className="w-full h-[50px] border border-gray-400 rounded-md p-2 text-[14px]"
                 placeholder="Address Line 3"
-                
               />
               <div className="flex gap-4">
                 <input
@@ -142,10 +140,6 @@ export default function Checkout() {
                 Make this my preferred address
               </label>
             </div>
-
-            {/* <ContactInfo /> */}
-
-           
           </div>
 
           <div className="lg:w-1/3 xl:w-2/5 border-t lg:border-t-0 lg:border-l pl-0 lg:pl-4">

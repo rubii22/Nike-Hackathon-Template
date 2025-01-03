@@ -98,7 +98,7 @@ const Join = () => {
 
           {/* Terms and Conditions */}
           <p className="text-xs text-gray-600 text-center">
-            By creating an account, you agree to Nike's Privacy Policy and Terms of Use.
+            By creating an account, you agree to Nike&apos;s Privacy Policy and Terms of Use.
           </p>
 
           {/* Join Button */}

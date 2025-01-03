@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Essential = () => {
   return (
@@ -10,27 +11,33 @@ const Essential = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Men's Section */}
         <div className="relative">
-          <img
+          <Image
             src="/men.png"
-            alt="Men's Essentials"
+            alt="Men&apos;s Essentials"
+            width={500}
+            height={500}
             className="w-full h-auto rounded-lg shadow-lg"
           />
         </div>
 
         {/* Women's Section */}
         <div className="relative">
-          <img
+          <Image
             src="/women.png"
-            alt="Women's Essentials"
+            alt="Women&apos;s Essentials"
+            width={500}
+            height={500}
             className="w-full h-auto rounded-lg shadow-lg"
           />
         </div>
 
         {/* Kids' Section */}
         <div className="relative">
-          <img
+          <Image
             src="/kids.png"
-            alt="Kids' Essentials"
+            alt="Kids&apos; Essentials"
+            width={500}
+            height={500}
             className="w-full h-auto rounded-lg shadow-lg"
           />
         </div>
@@ -65,12 +72,12 @@ const Essential = () => {
           </ul>
         </div>
         <div>
-          <h3 className="text-xl sm:text-2xl font-bold mb-2">Kids'</h3>
+          <h3 className="text-xl sm:text-2xl font-bold mb-2">Kids&apos;</h3>
           <ul className="space-y-1 text-base sm:text-lg">
             <li>Infant & Toddler Shoes</li>
-            <li>Kids' Shoes</li>
-            <li>Kids' Jordan Shoes</li>
-            <li>Kids' Basketball Shoes</li>
+            <li>Kids&apos; Shoes</li>
+            <li>Kids&apos; Jordan Shoes</li>
+            <li>Kids&apos; Basketball Shoes</li>
           </ul>
         </div>
       </div>

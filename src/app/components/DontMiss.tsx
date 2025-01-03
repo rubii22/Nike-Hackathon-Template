@@ -1,18 +1,21 @@
 import React from "react";
+import Image from "next/image";
 
 const DontMiss = () => {
   return (
     <section className="flex flex-col items-center px-6 py-20 bg-white">
       {/* Heading aligned to the left */}
       <h2 className="text-3xl sm:text-4xl font-semibold mb-6 w-full max-w-7xl text-left">
-        Don't Miss
+        Don&apos;t Miss
       </h2>
 
       {/* Image Section */}
       <div className="w-full max-w-7xl">
-        <img
-          src="Dontmiss.png"
+        <Image
+          src="/Dontmiss.png"
           alt="Don't Miss"
+          width={1200}
+          height={800}
           className="w-full h-auto rounded-lg shadow-lg"
         />
       </div>

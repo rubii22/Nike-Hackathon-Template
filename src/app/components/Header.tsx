@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const Header = () => {
   return (
@@ -6,11 +7,9 @@ const Header = () => {
       {/* Top Header */}
       <div className="bg-gray-100 text-black text-sm px-4 py-2 flex justify-between items-center">
         <div className="flex items-center space-x-4">
-          
-          <img src="/logo1.png" alt="Logo" className="w-6 h-6" />
+          <Image src="/logo1.png" alt="Logo" width={24} height={24} />
         </div>
         <div className="hidden md:flex items-center space-x-4">
-        
           <Link href="/findstore" className="hover:underline">
             Find a Store
           </Link>
@@ -34,7 +33,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Left: Logo */}
           <div>
-            <img src="/logo.png" alt="Logo" className="w-12 h-12 sm:w-16 sm:h-16" />
+            <Image src="/logo.png" alt="Logo" width={48} height={48} />
           </div>
 
           {/* Center: Navbar Links */}
@@ -68,20 +67,27 @@ const Header = () => {
                 placeholder="Search"
                 className="w-full pl-8 pr-3 py-1 rounded-full border border-gray-300 focus:outline-none focus:border-black text-sm"
               />
-              <img
+              <Image
                 src="/searchicon.png"
                 alt="Search Icon"
-                className="absolute left-2 top-1/2 transform -translate-y-1/2 w-4 h-4"
+                width={16}
+                height={16}
+                className="absolute left-2 top-1/2 transform -translate-y-1/2"
               />
             </div>
 
             {/* Icons */}
             <button>
-              <img src="/heart.png" alt="wishlist" className="h-5 w-5" />
+              <Image src="/heart.png" alt="Wishlist" width={20} height={20} />
             </button>
             <Link href="/Bag">
-  <img src="/cart.png" alt="shoppingcart" className="h-5 w-5 cursor-pointer" />
-</Link>
+              <Image
+                src="/cart.png"
+                alt="Shopping Cart"
+                width={20}
+                height={20}
+              />
+            </Link>
           </div>
         </div>
       </div>
