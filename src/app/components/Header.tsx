@@ -94,19 +94,19 @@ const Header = () => {
 
       {/* Mobile Navbar */}
       <div className="bg-white border-t border-gray-300 flex justify-around items-center text-sm lg:hidden py-2">
-        <Link href="/" className="hover:text-gray-500">
+        <Link href="/Products" className="hover:text-gray-500">
           Home
         </Link>
-        <Link href="/" className="hover:text-gray-500">
+        <Link href="#" className="hover:text-gray-500">
           Men
         </Link>
-        <Link href="/" className="hover:text-gray-500">
+        <Link href="#" className="hover:text-gray-500">
           Women
         </Link>
-        <Link href="/sales" className="hover:text-gray-500">
+        <Link href="#" className="hover:text-gray-500">
           Sale
         </Link>
-        <Link href="/" className="hover:text-gray-500">
+        <Link href="#" className="hover:text-gray-500">
           SNKRS
         </Link>
       </div>
